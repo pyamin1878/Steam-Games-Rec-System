@@ -1,7 +1,7 @@
 
 # Steam Game Recommendation System
 
-# ![Steam_Game](https://github.com/pyamin1878/Steam-Games-Rec-System/tree/main/Images/Steam_Game.PNG)
+# ![Alt text](Images/Steam_Game.PNG)
 
 ## Overview
 
@@ -12,29 +12,46 @@ The Steam Game Recommendation System transforms the gaming experience on Steam b
 
 IThe Steam Game Recommendation System aims to enhance user engagement and satisfaction on the Steam gaming platform. By leveraging collaborative filtering techniques, user preferences, and historical gameplay data, the system seeks to provide personalized game recommendations tailored to each user's unique gaming preferences. The primary business goal is to increase game discoverability, leading to higher user retention and increased revenue through game sales. Additionally, the recommendation system contributes to creating a more immersive and enjoyable gaming experience for Steam users by connecting them with titles that align with their interests and gaming habits. Overall, the system aims to foster a stronger connection between gamers and the diverse range of games available on the Steam platform.
 
-## Data Understanding
+## Data Understanding and Preprocessing
+![Alt text](Images/Data_points.PNG)
 
-The dataset, sourced from Kaggle , [steam Video Games] (https://www.kaggle.com/datasets/tamber/steam-video-games/data)with 200k Data points , After cleaning and and removieng ouliners we endded up with 2,569 unique Games and 10,271 unique user_id(users).
-
-# ![Data_points](https://github.com/pyamin1878/Steam-Games-Rec-System/tree/main/Images/Data_points.PNG)
-
+The dataset, sourced from Kaggle [Steam Video Games](https://www.kaggle.com/datasets/tamber/steam-video-games/data) with 200k steam user interactions. Between users and how they purchase and play games we end up subsetting the data so that we drop all purchases from the columns and only use games that have been played. After cleaning and and removing ouliers we ended up with 2,569 unique `Games` and 10,271 unique `user_id`.
 
 
-# EDA and Modeling
 
 
-# ![EDA](https://github.com/pyamin1878/Steam-Games-Rec-System/tree/main/Images/EDA.PNG)
+| ![Hours played](Images/EDA.PNG) |
+| :--: |
+| *Plot here is adopted from a Kaggle notebook* 
 
-# ![Score of winning model](https://github.com/RigatN/Tanzanian-Water-Well-Dysfunction/blob/main/Images/score11.PNG)
+# Modeling and Evaluation
+We are building a Collaboritive Recommendation System with a python package called `surprise` here is a [link](https://surprise.readthedocs.io/en/stable/) to the documentation. So we started with a baseline model using `Normal Predictor` which we will use to compare results to our optimized final model. Through an iterative process we tried a few different models within the surprise library such as `SVD`, `KNNWithMeans`, and `SVD++`. The metrics we used with cross validation to evaluate our models is RMSE (root mean squared error) and MAE (mean absolute error).
 
+#### Normal Predictor 
+![Alt text](Images/Normal_Predictor_Results.png)
+
+#### SVD
+![Alt text](Images/SVD_Results.png)
+
+#### KNNWithMeans
+![Alt text](Images/KNNWithMeans_Results.png)
+
+### Final Model
+
+We used `GridSearchCV` to optimize our final model SVD++ which had the best performance and lowest RMSE and MAE on the testset.
+
+![Alt text](Images/SDVpp_Results.png)
 
 
 # DEMO
+![Alt text](Images/demo.PNG)
 
-Here is the [link] (https://9f9bc618fba5c54ebc.gradio.live/) for our web application to demonestrate the prediction from our model which is pickled.
 
 
-# ![demo](https://github.com/pyamin1878/Steam-Games-Rec-System/tree/main/Images/demo.PNG)
+
+Here is the [link](https://9f9bc618fba5c54ebc.gradio.live/) for our web application to demonestrate the prediction from our model which is pickled.
+
+
 
 
 ## Next Step
@@ -51,3 +68,6 @@ In the next phase of the project, users will have the opportunity to input their
 ├── Final_Notebook
 ├── README.md
 ```
+## Citations
+
+[Kaggle Notebook](https://www.kaggle.com/code/simonprevoteaux/steam-game-analysis/notebook)
