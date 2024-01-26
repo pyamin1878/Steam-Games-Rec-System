@@ -36,20 +36,42 @@ We are building a Collaboritive Recommendation System with a python package call
 #### KNNWithMeans
 ![Alt text](Images/KNNWithMeans_Results.png)
 
-### Final Model
+### SVD++ 
 
-We used `GridSearchCV` to optimize our final model SVD++ which had the best performance and lowest RMSE and MAE on the testset.
+#### Final Optimized Model
+
+We used `GridSearchCV` to optimize our final model SVD++ which had the best performance and lowest RMSE and MAE on the testset. Hyperparameters as well as the best RMSE score are provided. 
 
 ![Alt text](Images/SDVpp_Results.png)
 
 
-# DEMO
+# Demo 
 ![Alt text](Images/demo.PNG)
+We built a demo with [Gradio](https://www.gradio.app/) a python package that lets you deploy your machine learning model without any need to write front end code like JS, HTML, or CSS. 
+
+Gradio can be installed with `pip`:
+
+`pip install gradio`
+
+Starter code to run gradio interface straight from your notebook or python script:
+
+```python
+import gradio as gr
+
+def greet(name):
+    return "Hello " + name + "!"
+
+demo = gr.Interface(
+    fn=greet, 
+    inputs="text", 
+    outputs="text")
+
+demo.launch()
+```
 
 
 
-
-Here is the [link](https://9f9bc618fba5c54ebc.gradio.live/) for our web application to demonestrate the prediction from our model which is pickled.
+Here is the [link](https://2aee7fc06c1f03a3f1.gradio.live/) for our web application to demonstrate 5 top recommendations from our pickled model. You just need to input the `user_id`
 
 
 
