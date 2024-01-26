@@ -1,7 +1,9 @@
 
-# Steam Game Recommendation System
+# Steam Games Recommendation System
+
 
 # ![Alt text](Images/Steam_Game.PNG)
+
 
 ## Overview
 
@@ -20,6 +22,7 @@ The dataset, sourced from Kaggle [Steam Video Games](https://www.kaggle.com/data
 
 
 
+
 | ![Hours played](Images/EDA.PNG) |
 | :--: |
 | *Plot here is adopted from a Kaggle notebook* 
@@ -27,8 +30,11 @@ The dataset, sourced from Kaggle [Steam Video Games](https://www.kaggle.com/data
 # Modeling and Evaluation
 We are building a Collaboritive Recommendation System with a python package called `surprise` here is a [link](https://surprise.readthedocs.io/en/stable/) to the documentation. So we started with a baseline model using `Normal Predictor` which we will use to compare results to our optimized final model. Through an iterative process we tried a few different models within the surprise library such as `SVD`, `KNNWithMeans`, and `SVD++`. The metrics we used with cross validation to evaluate our models is RMSE (root mean squared error) and MAE (mean absolute error).
 
+
+
 #### Normal Predictor 
 ![Alt text](Images/Normal_Predictor_Results.png)
+
 
 #### SVD
 ![Alt text](Images/SVD_Results.png)
@@ -72,6 +78,7 @@ demo.launch()
 
 
 Here is the [link](https://2aee7fc06c1f03a3f1.gradio.live/) for our web application to demonstrate 5 top recommendations from our pickled model. You just need to input the `user_id`
+
 
 
 
