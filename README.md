@@ -1,7 +1,7 @@
 
-# Steam Game Recommendation System
+# Steam Games Recommendation System
 
-# ![Steam_Game](https://github.com/pyamin1878/Steam-Games-Rec-System/tree/main/Images/Steam_Game.PNG)
+# ![Game](https://github.com/pyamin1878/Steam-Games-Rec-System/blob/main/Images/Steam_Game.PNG)
 
 ## Overview
 
@@ -16,14 +16,14 @@ IThe Steam Game Recommendation System aims to enhance user engagement and satisf
 
 The dataset, sourced from Kaggle , [steam Video Games] (https://www.kaggle.com/datasets/tamber/steam-video-games/data)with 200k Data points , After cleaning and and removieng ouliners we endded up with 2,569 unique Games and 10,271 unique user_id(users).
 
-# ![Data_points](https://github.com/pyamin1878/Steam-Games-Rec-System/tree/main/Images/Data_points.PNG)
+# ![Data_points](https://github.com/pyamin1878/Steam-Games-Rec-System/blob/main/Images/Data_points.PNG)
 
 
 
 # EDA and Modeling
 
 
-# ![EDA](https://github.com/pyamin1878/Steam-Games-Rec-System/tree/main/Images/EDA.PNG)
+# ![EDA](https://github.com/pyamin1878/Steam-Games-Rec-System/blob/main/Images/EDA.PNG)
 
 # ![Score of winning model](https://github.com/RigatN/Tanzanian-Water-Well-Dysfunction/blob/main/Images/score11.PNG)
 
@@ -34,7 +34,7 @@ The dataset, sourced from Kaggle , [steam Video Games] (https://www.kaggle.com/d
 Here is the [link] (https://9f9bc618fba5c54ebc.gradio.live/) for our web application to demonestrate the prediction from our model which is pickled.
 
 
-# ![demo](https://github.com/pyamin1878/Steam-Games-Rec-System/tree/main/Images/demo.PNG)
+# ![demo](https://github.com/pyamin1878/Steam-Games-Rec-System/blob/main/Images/demo.PNG)
 
 
 ## Next Step
