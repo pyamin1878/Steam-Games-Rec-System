@@ -1,7 +1,11 @@
 
-# Steam Game Recommendation System
+# Steam Games Recommendation System
+
+
+# ![Game](https://github.com/pyamin1878/Steam-Games-Rec-System/blob/main/Images/Steam_Game.PNG)
 
 # ![Alt text](Images/Steam_Game.PNG)
+
 
 ## Overview
 
@@ -18,6 +22,10 @@ IThe Steam Game Recommendation System aims to enhance user engagement and satisf
 The dataset, sourced from Kaggle [Steam Video Games](https://www.kaggle.com/datasets/tamber/steam-video-games/data) with 200k steam user interactions. Between users and how they purchase and play games we end up subsetting the data so that we drop all purchases from the columns and only use games that have been played. After cleaning and and removing ouliers we ended up with 2,569 unique `Games` and 10,271 unique `user_id`.
 
 
+# ![Data_points](https://github.com/pyamin1878/Steam-Games-Rec-System/blob/main/Images/Data_points.PNG)
+
+
+
 
 
 | ![Hours played](Images/EDA.PNG) |
@@ -27,8 +35,12 @@ The dataset, sourced from Kaggle [Steam Video Games](https://www.kaggle.com/data
 # Modeling and Evaluation
 We are building a Collaboritive Recommendation System with a python package called `surprise` here is a [link](https://surprise.readthedocs.io/en/stable/) to the documentation. So we started with a baseline model using `Normal Predictor` which we will use to compare results to our optimized final model. Through an iterative process we tried a few different models within the surprise library such as `SVD`, `KNNWithMeans`, and `SVD++`. The metrics we used with cross validation to evaluate our models is RMSE (root mean squared error) and MAE (mean absolute error).
 
+
+# ![EDA](https://github.com/pyamin1878/Steam-Games-Rec-System/blob/main/Images/EDA.PNG)
+
 #### Normal Predictor 
 ![Alt text](Images/Normal_Predictor_Results.png)
+
 
 #### SVD
 ![Alt text](Images/SVD_Results.png)
@@ -73,6 +85,9 @@ demo.launch()
 
 Here is the [link](https://2aee7fc06c1f03a3f1.gradio.live/) for our web application to demonstrate 5 top recommendations from our pickled model. You just need to input the `user_id`
 
+
+
+# ![demo](https://github.com/pyamin1878/Steam-Games-Rec-System/blob/main/Images/demo.PNG)
 
 
 
