@@ -85,10 +85,14 @@ In the next phase of the project, users will have the opportunity to input their
 ## Repo Structure
 
 ```
+├── Images
 ├── data
-├── images
-├── Final_Notebook
+├── notebooks
+├── .gitignore
+├── License
 ├── README.md
+├── Recommendation_System.ipynb -------------> Final Notebook
+├── svdpp_model.pkl ---------------->          Final Model
 ```
 ## Citations
 
