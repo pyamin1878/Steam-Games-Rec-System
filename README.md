@@ -2,9 +2,15 @@
 # Steam Games Recommendation System
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ![Game](https://github.com/pyamin1878/Steam-Games-Rec-System/blob/main/Images/Steam_Game.PNG)
 =======
 # ![Alt text](Images/Steam_Game.PNG)
+>>>>>>> main
+=======
+
+# ![Alt text](Images/Steam_Game.PNG)
+
 >>>>>>> main
 
 ## Overview
@@ -22,8 +28,12 @@ IThe Steam Game Recommendation System aims to enhance user engagement and satisf
 The dataset, sourced from Kaggle [Steam Video Games](https://www.kaggle.com/datasets/tamber/steam-video-games/data) with 200k steam user interactions. Between users and how they purchase and play games we end up subsetting the data so that we drop all purchases from the columns and only use games that have been played. After cleaning and and removing ouliers we ended up with 2,569 unique `Games` and 10,271 unique `user_id`.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ![Data_points](https://github.com/pyamin1878/Steam-Games-Rec-System/blob/main/Images/Data_points.PNG)
 =======
+>>>>>>> main
+=======
+
 >>>>>>> main
 
 
@@ -36,10 +46,18 @@ The dataset, sourced from Kaggle [Steam Video Games](https://www.kaggle.com/data
 We are building a Collaboritive Recommendation System with a python package called `surprise` here is a [link](https://surprise.readthedocs.io/en/stable/) to the documentation. So we started with a baseline model using `Normal Predictor` which we will use to compare results to our optimized final model. Through an iterative process we tried a few different models within the surprise library such as `SVD`, `KNNWithMeans`, and `SVD++`. The metrics we used with cross validation to evaluate our models is RMSE (root mean squared error) and MAE (mean absolute error).
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ![EDA](https://github.com/pyamin1878/Steam-Games-Rec-System/blob/main/Images/EDA.PNG)
 =======
 #### Normal Predictor 
 ![Alt text](Images/Normal_Predictor_Results.png)
+>>>>>>> main
+=======
+
+
+#### Normal Predictor 
+![Alt text](Images/Normal_Predictor_Results.png)
+
 >>>>>>> main
 
 #### SVD
@@ -87,8 +105,12 @@ Here is the [link](https://2aee7fc06c1f03a3f1.gradio.live/) for our web applicat
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ![demo](https://github.com/pyamin1878/Steam-Games-Rec-System/blob/main/Images/demo.PNG)
 =======
+>>>>>>> main
+=======
+
 >>>>>>> main
 
 
@@ -96,15 +118,21 @@ Here is the [link](https://2aee7fc06c1f03a3f1.gradio.live/) for our web applicat
 
 In the next phase of the project, users will have the opportunity to input their unique user_id through API calls, enabling the system to provide personalized game recommendations tailored to their gaming preferences. This interactive feature enhances the user experience by delivering targeted suggestions based on individual gaming histories. By leveraging API functionality, the recommendation system ensures a dynamic and user-centric approach, fostering greater engagement and satisfaction within the gaming community.
 
+Stable Deployment for our model with hf spaces or a full web application.
+
 
 
 ## Repo Structure
 
 ```
+├── Images
 ├── data
-├── images
-├── Final_Notebook
+├── notebooks
+├── .gitignore
+├── License
 ├── README.md
+├── Recommendation_System.ipynb -------------> Final Notebook
+├── svdpp_model.pkl ---------------->          Final Model
 ```
 ## Citations
 
