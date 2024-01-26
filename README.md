@@ -1,7 +1,11 @@
 
 # Steam Games Recommendation System
 
+<<<<<<< HEAD
 # ![Game](https://github.com/pyamin1878/Steam-Games-Rec-System/blob/main/Images/Steam_Game.PNG)
+=======
+# ![Alt text](Images/Steam_Game.PNG)
+>>>>>>> main
 
 ## Overview
 
@@ -12,29 +16,80 @@ The Steam Game Recommendation System transforms the gaming experience on Steam b
 
 IThe Steam Game Recommendation System aims to enhance user engagement and satisfaction on the Steam gaming platform. By leveraging collaborative filtering techniques, user preferences, and historical gameplay data, the system seeks to provide personalized game recommendations tailored to each user's unique gaming preferences. The primary business goal is to increase game discoverability, leading to higher user retention and increased revenue through game sales. Additionally, the recommendation system contributes to creating a more immersive and enjoyable gaming experience for Steam users by connecting them with titles that align with their interests and gaming habits. Overall, the system aims to foster a stronger connection between gamers and the diverse range of games available on the Steam platform.
 
-## Data Understanding
+## Data Understanding and Preprocessing
+![Alt text](Images/Data_points.PNG)
 
-The dataset, sourced from Kaggle , [steam Video Games] (https://www.kaggle.com/datasets/tamber/steam-video-games/data)with 200k Data points , After cleaning and and removieng ouliners we endded up with 2,569 unique Games and 10,271 unique user_id(users).
+The dataset, sourced from Kaggle [Steam Video Games](https://www.kaggle.com/datasets/tamber/steam-video-games/data) with 200k steam user interactions. Between users and how they purchase and play games we end up subsetting the data so that we drop all purchases from the columns and only use games that have been played. After cleaning and and removing ouliers we ended up with 2,569 unique `Games` and 10,271 unique `user_id`.
 
+<<<<<<< HEAD
 # ![Data_points](https://github.com/pyamin1878/Steam-Games-Rec-System/blob/main/Images/Data_points.PNG)
+=======
+>>>>>>> main
 
 
 
-# EDA and Modeling
+| ![Hours played](Images/EDA.PNG) |
+| :--: |
+| *Plot here is adopted from a Kaggle notebook* 
 
+# Modeling and Evaluation
+We are building a Collaboritive Recommendation System with a python package called `surprise` here is a [link](https://surprise.readthedocs.io/en/stable/) to the documentation. So we started with a baseline model using `Normal Predictor` which we will use to compare results to our optimized final model. Through an iterative process we tried a few different models within the surprise library such as `SVD`, `KNNWithMeans`, and `SVD++`. The metrics we used with cross validation to evaluate our models is RMSE (root mean squared error) and MAE (mean absolute error).
 
+<<<<<<< HEAD
 # ![EDA](https://github.com/pyamin1878/Steam-Games-Rec-System/blob/main/Images/EDA.PNG)
+=======
+#### Normal Predictor 
+![Alt text](Images/Normal_Predictor_Results.png)
+>>>>>>> main
 
-# ![Score of winning model](https://github.com/RigatN/Tanzanian-Water-Well-Dysfunction/blob/main/Images/score11.PNG)
+#### SVD
+![Alt text](Images/SVD_Results.png)
+
+#### KNNWithMeans
+![Alt text](Images/KNNWithMeans_Results.png)
+
+### SVD++ 
+
+#### Final Optimized Model
+
+We used `GridSearchCV` to optimize our final model SVD++ which had the best performance and lowest RMSE and MAE on the testset. Hyperparameters as well as the best RMSE score are provided. 
+
+![Alt text](Images/SDVpp_Results.png)
+
+
+# Demo 
+![Alt text](Images/demo.PNG)
+We built a demo with [Gradio](https://www.gradio.app/) a python package that lets you deploy your machine learning model without any need to write front end code like JS, HTML, or CSS. 
+
+Gradio can be installed with `pip`:
+
+`pip install gradio`
+
+Starter code to run gradio interface straight from your notebook or python script:
+
+```python
+import gradio as gr
+
+def greet(name):
+    return "Hello " + name + "!"
+
+demo = gr.Interface(
+    fn=greet, 
+    inputs="text", 
+    outputs="text")
+
+demo.launch()
+```
 
 
 
-# DEMO
-
-Here is the [link] (https://9f9bc618fba5c54ebc.gradio.live/) for our web application to demonestrate the prediction from our model which is pickled.
+Here is the [link](https://2aee7fc06c1f03a3f1.gradio.live/) for our web application to demonstrate 5 top recommendations from our pickled model. You just need to input the `user_id`
 
 
+<<<<<<< HEAD
 # ![demo](https://github.com/pyamin1878/Steam-Games-Rec-System/blob/main/Images/demo.PNG)
+=======
+>>>>>>> main
 
 
 ## Next Step
@@ -51,3 +106,6 @@ In the next phase of the project, users will have the opportunity to input their
 ├── Final_Notebook
 ├── README.md
 ```
+## Citations
+
+[Kaggle Notebook](https://www.kaggle.com/code/simonprevoteaux/steam-game-analysis/notebook)
