@@ -87,15 +87,21 @@ Here is the [link](https://2aee7fc06c1f03a3f1.gradio.live/) for our web applicat
 
 In the next phase of the project, users will have the opportunity to input their unique user_id through API calls, enabling the system to provide personalized game recommendations tailored to their gaming preferences. This interactive feature enhances the user experience by delivering targeted suggestions based on individual gaming histories. By leveraging API functionality, the recommendation system ensures a dynamic and user-centric approach, fostering greater engagement and satisfaction within the gaming community.
 
+Stable Deployment for our model with hf spaces or a full web application.
+
 
 
 ## Repo Structure
 
 ```
+├── Images
 ├── data
-├── images
-├── Final_Notebook
+├── notebooks
+├── .gitignore
+├── License
 ├── README.md
+├── Recommendation_System.ipynb -------------> Final Notebook
+├── svdpp_model.pkl ---------------->          Final Model
 ```
 ## Citations
 
