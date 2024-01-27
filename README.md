@@ -26,7 +26,9 @@ The dataset, sourced from Kaggle [Steam Video Games](https://www.kaggle.com/data
 | *Plot here is adopted from a Kaggle notebook* 
 
 # Modeling and Evaluation
-We are building a Collaboritive Recommendation System with a python package called `surprise` here is a [link](https://surprise.readthedocs.io/en/stable/) to the documentation. So we started with a baseline model using `Normal Predictor` which we will use to compare results to our optimized final model. Through an iterative process we tried a few different models within the surprise library such as `SVD`, `KNNWithMeans`, and `SVD++`. The metrics we used with cross validation to evaluate our models is RMSE (root mean squared error) and MAE (mean absolute error).
+We are building a user based Collaboritive Filtering Recommender System with a python package called `surprise` here is a [link](https://surprise.readthedocs.io/en/stable/) to the documentation. 
+
+We started with a baseline model using `Normal Predictor` which we will use to compare results to our optimized final model. Through an iterative process we tried a few different models within the surprise library such as `SVD`, `KNNWithMeans`, and `SVD++`. The metrics we used with cross validation to evaluate our models is RMSE (root mean squared error) and MAE (mean absolute error).
 
 
 #### Normal Predictor 
@@ -79,7 +81,9 @@ Here is the [link](https://2aee7fc06c1f03a3f1.gradio.live/) for our web applicat
 
 
 
-## Next Step
+
+## Next Steps
+
 
 In the next phase of the project, users will have the opportunity to input their unique user_id through API calls, enabling the system to provide personalized game recommendations tailored to their gaming preferences. This interactive feature enhances the user experience by delivering targeted suggestions based on individual gaming histories. By leveraging API functionality, the recommendation system ensures a dynamic and user-centric approach, fostering greater engagement and satisfaction within the gaming community.
 
@@ -102,3 +106,5 @@ Stable Deployment for our model with hf spaces or a full web application.
 ## Citations
 
 [Kaggle Notebook](https://www.kaggle.com/code/simonprevoteaux/steam-game-analysis/notebook)
+
+[Gradio Quickstart](https://www.gradio.app/guides/quickstart)
