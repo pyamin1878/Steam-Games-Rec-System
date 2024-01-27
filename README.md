@@ -62,6 +62,7 @@ Gradio can be installed with `pip`:
 Starter code to run gradio interface straight from your notebook or python script:
 
 ```python
+
 import gradio as gr
 
 def greet(name):
@@ -73,6 +74,7 @@ demo = gr.Interface(
     outputs="text")
 
 demo.launch()
+
 ```
 
 
