@@ -79,7 +79,9 @@ demo.launch()
 
 
 
-Here is the [link](https://2aee7fc06c1f03a3f1.gradio.live/) for our web application to demonstrate 5 top recommendations from our pickled model. You just need to input the `user_id`
+Here is the [link](https://2aee7fc06c1f03a3f1.gradio.live/) for our web app to demonstrate top 5 recommendations from our pickled model. 
+
+You just need to input the `user_id`
 
 
 
