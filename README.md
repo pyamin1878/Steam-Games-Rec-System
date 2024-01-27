@@ -102,8 +102,8 @@ Stable Deployment for our model with hf spaces or a full web application.
 ├── .gitignore
 ├── License
 ├── README.md
-├── Recommendation_System.ipynb -------------> Final Notebook
-├── svdpp_model.pkl ---------------->          Final Model
+├── Recommendation_System.ipynb                     #  Final Notebook
+├── svdpp_model.pkl                                 #  Final Model
 ```
 ## Citations
 
