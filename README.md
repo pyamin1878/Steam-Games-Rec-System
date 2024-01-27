@@ -1,7 +1,6 @@
 
 # Steam Games Recommendation System
 
-
 # ![Alt text](Images/Steam_Game.PNG)
 
 
@@ -22,7 +21,6 @@ The dataset, sourced from Kaggle [Steam Video Games](https://www.kaggle.com/data
 
 
 
-
 | ![Hours played](Images/EDA.PNG) |
 | :--: |
 | *Plot here is adopted from a Kaggle notebook* 
@@ -33,9 +31,9 @@ We are building a user based Collaboritive Filtering Recommender System with a p
 We started with a baseline model using `Normal Predictor` which we will use to compare results to our optimized final model. Through an iterative process we tried a few different models within the surprise library such as `SVD`, `KNNWithMeans`, and `SVD++`. The metrics we used with cross validation to evaluate our models is RMSE (root mean squared error) and MAE (mean absolute error).
 
 
-
 #### Normal Predictor 
 ![Alt text](Images/Normal_Predictor_Results.png)
+
 
 
 #### SVD
@@ -84,8 +82,8 @@ Here is the [link](https://2aee7fc06c1f03a3f1.gradio.live/) for our web applicat
 
 
 
-
 ## Next Steps
+
 
 In the next phase of the project, users will have the opportunity to input their unique user_id through API calls, enabling the system to provide personalized game recommendations tailored to their gaming preferences. This interactive feature enhances the user experience by delivering targeted suggestions based on individual gaming histories. By leveraging API functionality, the recommendation system ensures a dynamic and user-centric approach, fostering greater engagement and satisfaction within the gaming community.
 
